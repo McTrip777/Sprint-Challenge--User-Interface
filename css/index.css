@@ -172,12 +172,12 @@ p {
     padding-right: 0;
 }
 
-footer {
+.footer-index {
     width: 100%;
     background: black;
 }
 
-footer nav {
+.footer-index nav {
     width: 60%;
     display: flex;
     justify-content: space-between;
@@ -270,6 +270,22 @@ footer nav a {
 .content-about .end-about{
     justify-content: flex-start;
     padding: 0 15px 20px;
+}
+
+footer{
+    display:flex;
+    width:100%;
+}
+
+footer nav{
+    justify-content: flex-start;
+    width: 60%;
+    display: flex;
+}
+
+footer a{
+background-color: black;
+padding: 20px;
 }
 
 footer a:hover{
