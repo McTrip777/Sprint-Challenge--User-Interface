@@ -196,8 +196,8 @@ footer nav a {
 }
 .content-about div{
     border-bottom:1px dashed black;
-    margin-bottom: 30px;
-    padding-bottom:30px;
+    margin-bottom: 40px;
+    padding-bottom:20px;
 }
 
 .header-tags-about{
@@ -219,7 +219,6 @@ footer nav a {
     margin-bottom: 10px;
 }
 
-
 /*  --Body--   */
 .content-about{
     display: flex;
@@ -230,7 +229,7 @@ footer nav a {
 
 .title-about{
     border-bottom: 1px dashed black;
-    padding: 20px 12px;
+    padding: 20px 15px;
     margin-bottom: 30px;
 }
 
@@ -238,6 +237,10 @@ footer nav a {
     flex-basis:45%;
     flex-wrap:wrap;
     justify-content: space-between;
+}
+
+.content-about .box img{
+    margin-bottom:10px;
 }
 
 .box p{
@@ -250,3 +253,7 @@ footer nav a {
     border: 2px solid black;
 }
 
+.content-about .end-about{
+    justify-content: flex-start;
+    padding: 0 15px 20px;
+}
