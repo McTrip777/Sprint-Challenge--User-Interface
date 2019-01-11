@@ -67,7 +67,7 @@ p {
 }
 
 
-
+/*Home page css v */
 
 .container {
     width: 800px;
@@ -186,3 +186,67 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/*home page css ^ */
+/* about page css v */
+
+.container-about-page {
+    width: 800px;
+    margin: 0 auto;
+}
+.content-about div{
+    border-bottom:1px dashed black;
+    margin-bottom: 30px;
+    padding-bottom:30px;
+}
+
+.header-tags-about{
+    display:flex;
+    align-items:baseline;
+    justify-content: space-between;
+}
+.header-tags-about img{
+    margin: 20px 0 40px 0;
+}
+
+.header-tags-about nav a{
+    margin: 0 35px;
+    text-decoration: none;
+    color: gray;
+}
+
+.title-img-about{
+    margin-bottom: 10px;
+}
+
+
+/*  --Body--   */
+.content-about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    line-height: 1;
+}
+
+.title-about{
+    border-bottom: 1px dashed black;
+    padding: 20px 12px;
+    margin-bottom: 30px;
+}
+
+.content-about .box{
+    flex-basis:45%;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.box p{
+    margin-bottom:10px;
+}
+.box button{
+    border-radius:5px;
+    padding: 7px 20px;
+    font-size: 14px;
+    border: 2px solid black;
+}
+
