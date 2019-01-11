@@ -69,13 +69,27 @@ p {
 
 
 
-
-
-
-
 .container {
     width: 800px;
     margin: 0 auto;
+}
+.header-tags{
+    display:flex;
+    align-items:baseline;
+    justify-content: space-between;
+}
+.header-tags img{
+    margin: 20px 0 40px 0;
+}
+
+.header-tags nav a{
+    margin: 0 35px;
+    text-decoration: none;
+    color: gray;
+}
+
+.title-img{
+    margin-bottom: 30px;
 }
 
 .top-content {
@@ -111,12 +125,33 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.boxes .box1{
+    background:teal;
+}.boxes .box2{
+    background:gold;
+}.boxes .box3{
+    background:cadetblue;
+}.boxes .box4{
+    background:coral;
+}.boxes .box5{
+    background:crimson;
+}.boxes .box6{
+    background:forestgreen;
+}.boxes .box7{
+    background:darkorchid;
+}.boxes .box8{
+    background:hotpink;
+}.boxes .box9{
+    background:indigo;
+}.boxes .box10{
+    background:dodgerblue;
 }
 
 .bottom-content {
