@@ -202,7 +202,7 @@ footer nav a {
 
 .header-tags-about{
     display:flex;
-    align-items:baseline;
+    align-items:center;
     justify-content: space-between;
 }
 .header-tags-about img{
