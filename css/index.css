@@ -83,10 +83,14 @@ p {
 }
 
 .header-tags nav a{
-    margin: 0 35px;
+    margin: 0 29px;
     text-decoration: none;
     color: gray;
+    padding:10px;
 }
+.header-tags nav a:hover{
+    Background-color:rgb(214, 211, 211);
+ }
 
 .title-img{
     margin-bottom: 30px;
@@ -208,11 +212,18 @@ footer nav a {
 .header-tags-about img{
     margin: 20px 0 40px 0;
 }
+.header-tags-about nav {
+    flex-wrap: nowrap;
+}
 
 .header-tags-about nav a{
-    margin: 0 35px;
+    margin: 0 29px;
     text-decoration: none;
     color: gray;
+    padding:10px;
+}
+.header-tags-about nav a:hover{
+    Background-color:rgb(214, 211, 211);
 }
 
 .title-img-about{
@@ -228,9 +239,7 @@ footer nav a {
 }
 
 .title-about{
-    border-bottom: 1px dashed black;
     padding: 20px 15px;
-    margin-bottom: 30px;
 }
 
 .content-about .box{
@@ -252,8 +261,18 @@ footer nav a {
     font-size: 14px;
     border: 2px solid black;
 }
+.box button:hover{
+    background-color: rgb(214, 211, 211);
+    transform: rotate(45deg);
+    transition-duration:2s;
+}
 
 .content-about .end-about{
     justify-content: flex-start;
     padding: 0 15px 20px;
+}
+
+footer a:hover{
+background-color: white;
+color:black;
 }
