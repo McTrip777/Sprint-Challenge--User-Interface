@@ -514,7 +514,9 @@ color:white;
 }
 .text-container-blog p{
     color:white;
-    margin: 0 25px 30px;;
+    margin-bottom: 30px;
+    padding: 0 20px 20px 20px;
+    border-bottom:10px inset white;
 }
 
 /* blog boxes ------------------------------------*/
@@ -530,21 +532,40 @@ color:white;
 }
 
 .blog-catagories .boxes div .box {
-    width: 100%;
+    width: 360px;
     height: 30px;
     color: rgb(117, 255, 129);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: black;
     border: 4px solid white;
     margin: 10px 0;
+    transform-origin: center;
 }
+.blog-catagories .blog-shift .box:hover{
+    animation: pulse 4s ease-out infinite;
+    transform-origin: center;
+}
+.blog-catagories #blog-shift .box:hover{
+    animation: pulse 4s ease-out infinite;
+}
+
+@keyframes pulse{
+    0%{ width: 360px;}
+    10%{width: 280px;}
+    20%{ width: 360px;}
+    30%{width: 280px;}
+    40%{ width: 360px;}
+    50%{width: 280px;}
+    60%{ width: 360px;}
+    70%{width: 280px;}
+    80%{ width: 360px;}
+    90%{width: 280px;}
+    100%{width: 360px}
+}
+
 .blog-catagories .boxes div .box h2{
-    font-size: 15px;
+    font-size: 12px;
 }
 .blog-catagories .boxes #blog-shift {
-display: flex;
 flex-flow: column nowrap;
 margin-top: 60px;
 border-bottom: 2px dashed white; 
@@ -553,7 +574,6 @@ padding-bottom: 20px;
 .blog-catagories .boxes .blog-shift {
     border-bottom: 2px dashed white;
     height:136px;
-    padding-bottom:20px;
 }
 .blog-catagories .boxes p{
     color: white;
@@ -561,16 +581,13 @@ padding-bottom: 20px;
 
 /* Bottom paragraphs blog----------------------------------- */
 .bottom-blog {
-    display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
 }
 
 .bottom-blog div{
     margin: 30px 5px;
-    justify-content: space-between;
     border: 1px dashed white;
-    padding:20px;
 }
 
 .bottom-blog .text-blog h2{
@@ -585,7 +602,6 @@ padding-bottom: 20px;
 /* Footer content bar blog------------------------------------ */
 
 .footer-blog{
-    display:flex;
     width:100%;
     background-color: black;
 }
