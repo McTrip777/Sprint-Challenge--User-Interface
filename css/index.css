@@ -66,9 +66,34 @@ p {
     line-height: 1.4;
 }
 
+
+/*Home page css v */
+
 .container {
     width: 800px;
     margin: 0 auto;
+}
+.header-tags{
+    display:flex;
+    align-items:baseline;
+    justify-content: space-between;
+}
+.header-tags img{
+    margin: 20px 0 40px 0;
+}
+
+.header-tags nav a{
+    margin: 0 29px;
+    text-decoration: none;
+    color: gray;
+    padding:10px;
+}
+.header-tags nav a:hover{
+    Background-color:rgb(214, 211, 211);
+ }
+
+.title-img{
+    margin-bottom: 30px;
 }
 
 .top-content {
@@ -104,12 +129,33 @@ p {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.boxes .box1{
+    background:teal;
+}.boxes .box2{
+    background:gold;
+}.boxes .box3{
+    background:cadetblue;
+}.boxes .box4{
+    background:coral;
+}.boxes .box5{
+    background:crimson;
+}.boxes .box6{
+    background:forestgreen;
+}.boxes .box7{
+    background:darkorchid;
+}.boxes .box8{
+    background:hotpink;
+}.boxes .box9{
+    background:indigo;
+}.boxes .box10{
+    background:dodgerblue;
 }
 
 .bottom-content {
@@ -126,12 +172,12 @@ p {
     padding-right: 0;
 }
 
-footer {
+.footer-index {
     width: 100%;
     background: black;
 }
 
-footer nav {
+.footer-index nav {
     width: 60%;
     display: flex;
     justify-content: space-between;
@@ -143,4 +189,420 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/*home page css ^ */
+/* about page css v */
+
+.container-about-page {
+    width: 800px;
+    margin: 0 auto;
+}
+.content-about div{
+    border-bottom:1px dashed black;
+    margin-bottom: 40px;
+    padding-bottom:20px;
+}
+
+.header-tags-about{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.header-tags-about img{
+    margin: 20px 0 40px 0;
+}
+.header-tags-about nav {
+    flex-wrap: nowrap;
+}
+
+.header-tags-about nav a{
+    margin: 0 29px;
+    text-decoration: none;
+    color: gray;
+    padding:10px;
+}
+.header-tags-about nav a:hover{
+    Background-color:rgb(214, 211, 211);
+}
+
+.title-img-about{
+    margin-bottom: 10px;
+}
+
+/*  --Body--   */
+.content-about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    line-height: 1;
+}
+
+.title-about{
+    padding: 20px 15px;
+}
+
+.content-about .box{
+    flex-basis:45%;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.content-about .box img{
+    margin-bottom:10px;
+}
+
+.box p{
+    margin-bottom:10px;
+}
+.box button{
+    border-radius:5px;
+    width:118px;
+    height:35px;
+    padding: 4px 10px;
+    font-size: 14px;
+    border: 2px solid black;
+}
+.box button:hover{
+    background-color: rgb(214, 211, 211);
+    transform: rotate(360deg);
+    width: 40%;
+    height:14%;
+    font-size:110%;
+    transition: 2s ease-in;
+}
+
+.content-about .end-about{
+    justify-content: flex-start;
+    padding: 0 15px 20px;
+}
+
+footer{
+    display:flex;
+    width:100%;
+    background-color: black;
+}
+
+footer nav{
+    justify-content: flex-start;
+    width: 60%;
+    display: flex;
+}
+
+footer a{
+background-color: black;
+padding: 20px;
+}
+
+footer a:hover{
+background-color: white;
+color:black;
+}
+
+
+/*-------------------Products---------------------*/
+
+/* title / page set up */
+
+.container-products-page {
+    width: 800px;
+    margin: 0 auto;
+    background-color:black;
+}
+
+/* top menu bar ------------------------------------*/
+
+.header-tags-products{
+    display:flex;
+    position:fixed;
+    background-color: black;
+    align-items:center;
+    justify-content: space-between;
+    border-bottom: 1px dashed white;
+}
+.header-tags-products img{
+    margin: 10px 0 10px 5px;
+    background:white;
+    border-radius:5px;
+    padding:3px;
+}
+.header-tags-products nav a{
+    margin: 0 28px;
+    text-decoration: none;
+    color: rgb(255, 117, 117);
+    padding:10px;
+}
+.header-tags-products nav a:hover{
+    Background-color:rgb(214, 211, 211);
+}
+
+/* top large image ---------------------------------*/
+.img-products{
+    display:flex;
+    justify-content: center;
+
+}
+
+.title-img-products{
+    width:110%;    
+    margin-bottom: 20px;
+}
+
+/* Apparel description -----------------------------*/
+
+.text-container-products{
+    text-align:center;
+}
+.text-container-products h1{
+    font-size: 20px;
+    color:white;
+}
+.text-container-products p{
+    color:white;
+    margin: 0 25px;
+}
+
+/* Apparel boxes ------------------------------------*/
+
+.pro-catagories .boxes {
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: space-evenly;
+}
+
+.pro-catagories .boxes .box {
+    width: 55%;
+    height: 80px;
+    margin: 5px 2.5%;
+    color: rgb(255, 117, 117);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.pro-catagories .boxes .box:hover{
+    margin-left:42.5%;
+    transition: 1s;
+    background-color:rgb(255, 117, 117);
+    color:white;
+    border: 4px solid white;
+}
+.pro-catagories .boxes #hover:hover{
+    margin-right:42.5%;
+    transition: 1s;
+    background-color:rgb(255, 117, 117);
+    color:white;
+    border: 4px solid white;
+
+}
+.pro-catagories .boxes #hover{
+align-self: flex-end;
+}
+
+/* Bottom paragraphs----------------------------------- */
+.bottom-products {
+    display: flex;
+    margin: 0 2% 20px;
+    justify-content: space-around;
+}
+
+.bottom-products div{
+    margin: 30px 5px;
+    justify-content: space-between;
+    border: 1px dashed white;
+    padding:20px;
+}
+
+.bottom-products .text-products h2{
+    color:rgb(255, 117, 117);
+    text-align: center;
+    font-size: 20px;
+}
+.bottom-products .text-products p{
+    color:white;
+}
+
+/* Footer content bar------------------------------------ */
+
+.footer-products{
+    display:flex;
+    width:100%;
+    background-color: white;
+}
+
+.footer-products nav{
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+}
+
+.footer-products a{
+background-color: white;
+color:rgb(255, 117, 117);;
+padding: 20px;
+}
+
+.footer-products nav a:hover{
+background-color: black;
+color:white;
+}
+
+
+
+
+/*-------------------blog---------------------*/
+
+/* title / page set up */
+
+.container-blog-page {
+    width: 800px;
+    margin: 0 auto;
+    background-color:black;
+}
+
+/* top menu bar ------------------------------------*/
+
+.header-tags-blog{
+    display:flex;
+    position:fixed;
+    background-color: black;
+    align-items:center;
+    justify-content: space-between;
+    border-bottom: 3px solid white;
+    border-radius: 10px;
+}
+.header-tags-blog img{
+    margin: 10px 0 10px 5px;
+    background:white;
+    border-radius:5px;
+    padding:3px;
+}
+.header-tags-blog nav a{
+    margin: 0 28px;
+    text-decoration: none;
+    color: rgb(117, 255, 129);
+    padding:10px;
+}
+.header-tags-blog nav a:hover{
+    Background-color:rgb(214, 211, 211);
+}
+
+/* top large image ---------------------------------*/
+.img-blog{
+    display:flex;
+    justify-content: center;
+}
+.title-img-blog{
+    width:100%;    
+    margin-bottom: 20px;
+    border: 10px double black;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* blog description -----------------------------*/
+
+.text-container-blog{
+    text-align:center;
+}
+.text-container-blog h1{
+    font-size: 20px;
+    color:white;
+}
+.text-container-blog p{
+    color:white;
+    margin: 0 25px 30px;;
+}
+
+/* blog boxes ------------------------------------*/
+
+.blog-catagories .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.blog-catagories .boxes div{
+    width:45%;
+}
+
+.blog-catagories .boxes div .box {
+    width: 100%;
+    height: 30px;
+    color: rgb(117, 255, 129);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border: 4px solid white;
+    margin: 10px 0;
+}
+.blog-catagories .boxes div .box h2{
+    font-size: 15px;
+}
+.blog-catagories .boxes #blog-shift {
+display: flex;
+flex-flow: column nowrap;
+margin-top: 60px;
+border-bottom: 2px dashed white; 
+padding-bottom: 20px;
+}
+.blog-catagories .boxes .blog-shift {
+    border-bottom: 2px dashed white;
+    height:136px;
+    padding-bottom:20px;
+}
+.blog-catagories .boxes p{
+    color: white;
+}
+
+/* Bottom paragraphs blog----------------------------------- */
+.bottom-blog {
+    display: flex;
+    margin: 0 2% 20px;
+    justify-content: space-around;
+}
+
+.bottom-blog div{
+    margin: 30px 5px;
+    justify-content: space-between;
+    border: 1px dashed white;
+    padding:20px;
+}
+
+.bottom-blog .text-blog h2{
+    color:rgb(117, 255, 129);
+    text-align: center;
+    font-size: 20px;
+}
+.bottom-blog .text-blog p{
+    color:white;
+}
+
+/* Footer content bar blog------------------------------------ */
+
+.footer-blog{
+    display:flex;
+    width:100%;
+    background-color: black;
+}
+
+.footer-blog nav{
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+}
+
+.footer-blog a{
+background-color: black;
+color:rgb(117, 255, 129);
+padding: 20px;
+}
+
+.footer-blog nav a:hover{
+background-color: white;
+color:black;
 }
