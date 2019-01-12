@@ -257,14 +257,19 @@ footer nav a {
 }
 .box button{
     border-radius:5px;
-    padding: 7px 20px;
+    width:118px;
+    height:35px;
+    padding: 4px 10px;
     font-size: 14px;
     border: 2px solid black;
 }
 .box button:hover{
     background-color: rgb(214, 211, 211);
-    transform: rotate(45deg);
-    transition-duration:2s;
+    transform: rotate(360deg);
+    width: 40%;
+    height:14%;
+    font-size:110%;
+    transition: 2s ease-in;
 }
 
 .content-about .end-about{
@@ -275,6 +280,7 @@ footer nav a {
 footer{
     display:flex;
     width:100%;
+    background-color: black;
 }
 
 footer nav{
@@ -291,4 +297,111 @@ padding: 20px;
 footer a:hover{
 background-color: white;
 color:black;
+}
+
+
+/*-------------------Products---------------------*/
+
+/* title / page set up */
+
+.container-products-page {
+    width: 800px;
+    margin: 0 auto;
+    background-color:black;
+}
+
+/* top menu bar ------------------------------------*/
+
+.header-tags-products{
+    display:flex;
+    position:fixed;
+    background-color: black;
+    align-items:center;
+    justify-content: space-between;
+}
+.header-tags-products img{
+    margin: 20px 0 40px 5px;
+    background:white;
+    border-radius:5px;
+    padding:3px;
+}
+.header-tags-products nav a{
+    margin: 0 28px;
+    text-decoration: none;
+    color: rgb(255, 117, 117);
+    padding:10px;
+}
+.header-tags-products nav a:hover{
+    Background-color:rgb(214, 211, 211);
+}
+
+/* top large image ---------------------------------*/
+.img-products{
+    display:flex;
+    justify-content: center;
+
+}
+
+.title-img-products{
+    width:110%;    
+    margin-bottom: 20px;
+}
+
+/* Apparel description -----------------------------*/
+
+.text-container-products{
+    text-align:center;
+}
+.text-container-products h1{
+    font-size: 20px;
+    color:white;
+}
+.text-container-products p{
+    color:white;
+    margin: 0 25px;
+}
+
+/* Apparel boxes ------------------------------------*/
+
+.pro-catagories .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.pro-catagories .boxes .box {
+    width: 33%;
+    height: 100px;
+    margin: 20px 2.5%;
+    color: rgb(45, 45, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Footer content bar------------------------------------ */
+
+.footer-products{
+    display:flex;
+    width:100%;
+    background-color: white;
+}
+
+.footer-products nav{
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+}
+
+.footer-products a{
+background-color: white;
+color:black;
+padding: 20px;
+}
+
+.footer-products nav a:hover{
+background-color: black;
+color:white;
 }
